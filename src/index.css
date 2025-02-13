@@ -10,7 +10,7 @@
   }
   
   body {
-    @apply font-sans text-textPrimary;
+    @apply font-sans text-gray-900 dark:text-white;
   }
 }
 
@@ -20,7 +20,7 @@
   }
   
   .btn {
-    @apply px-6 py-2 rounded-lg font-medium transition-all duration-300;
+    @apply px-6 py-3 rounded-lg font-medium transition-all duration-300;
   }
   
   .btn-primary {
@@ -32,7 +32,7 @@
   }
   
   .section-title {
-    @apply text-3xl md:text-4xl font-bold text-center mb-8;
+    @apply text-4xl font-bold text-center mb-12;
   }
   
   .card {

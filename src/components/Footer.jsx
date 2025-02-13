@@ -1,4 +1,4 @@
-import { FaTwitter, FaFacebookF, FaInstagram } from 'react-icons/fa';
+import { FiGithub, FiLinkedin, FiTwitter } from 'react-icons/fi';
 
 const Footer = () => {
   return (
@@ -14,29 +14,29 @@ const Footer = () => {
           <div className="flex space-x-6 mb-4 md:mb-0">
             <a
               href="#"
-              className="text-textSecondary hover:text-primary transition-colors"
+              className="text-gray-600 dark:text-gray-300 hover:text-primary transition-colors"
+              aria-label="Github"
+            >
+              <FiGithub size={20} />
+            </a>
+            <a
+              href="#"
+              className="text-gray-600 dark:text-gray-300 hover:text-primary transition-colors"
+              aria-label="Linkedin"
+            >
+              <FiLinkedin size={20} />
+            </a>
+            <a
+              href="#"
+              className="text-gray-600 dark:text-gray-300 hover:text-primary transition-colors"
               aria-label="Twitter"
             >
-              <FaTwitter size={20} />
-            </a>
-            <a
-              href="#"
-              className="text-textSecondary hover:text-primary transition-colors"
-              aria-label="Facebook"
-            >
-              <FaFacebookF size={20} />
-            </a>
-            <a
-              href="#"
-              className="text-textSecondary hover:text-primary transition-colors"
-              aria-label="Instagram"
-            >
-              <FaInstagram size={20} />
+              <FiTwitter size={20} />
             </a>
           </div>
 
-          <div className="text-center md:text-right text-textSecondary">
-            <p>©2024 AKILA. All rights reserved</p>
+          <div className="text-center md:text-right text-gray-600 dark:text-gray-300">
+            <p>2024 AKILA. All rights reserved</p>
           </div>
         </div>
       </div>

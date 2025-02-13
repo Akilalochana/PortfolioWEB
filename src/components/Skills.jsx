@@ -49,14 +49,19 @@ const Skills = () => {
   return (
     <section id="skills" className="py-20 bg-background">
       <div className="container mx-auto px-4">
-        <motion.h2
+        <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          className="section-title"
+          className="text-center mb-12"
         >
-          Skills & Experiences
-        </motion.h2>
+          <h2 className="text-4xl font-bold mb-4">
+            Skills & <span className="text-primary">Experience</span>
+          </h2>
+          <p className="text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">
+            Here's what I'm good at and where I've been
+          </p>
+        </motion.div>
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16">
           {/* Skills Grid */}
@@ -78,7 +83,7 @@ const Skills = () => {
                 <div className="w-16 h-16 rounded-full bg-white shadow-lg flex items-center justify-center p-3 mb-2">
                   <img src={skill.icon} alt={skill.name} className="w-full h-full object-contain" />
                 </div>
-                <span className="text-sm text-textSecondary">{skill.name}</span>
+                <span className="text-sm text-gray-600 dark:text-gray-300">{skill.name}</span>
               </motion.div>
             ))}
           </motion.div>
@@ -100,12 +105,16 @@ const Skills = () => {
                 className="mb-8 relative pl-8 border-l-2 border-primary"
               >
                 <div className="absolute left-[-8px] top-0 w-4 h-4 bg-primary rounded-full" />
-                <div className="flex items-center mb-2">
-                  <span className="text-primary font-semibold mr-4">{exp.year}</span>
-                  <h3 className="text-xl font-bold">{exp.position}</h3>
+                <div className="mb-8">
+                  <h3 className="text-lg font-semibold text-gray-900 dark:text-white mb-2">
+                    {exp.company}
+                  </h3>
+                  <p className="text-primary font-medium mb-1">{exp.position}</p>
+                  <p className="text-gray-600 dark:text-gray-300">{exp.description}</p>
+                  <span className="text-sm text-gray-500 dark:text-gray-400">
+                    {exp.year}
+                  </span>
                 </div>
-                <p className="text-textSecondary mb-2">{exp.company}</p>
-                <p className="text-sm text-textSecondary">{exp.description}</p>
               </motion.div>
             ))}
           </motion.div>

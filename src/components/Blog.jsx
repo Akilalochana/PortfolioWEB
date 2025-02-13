@@ -66,7 +66,7 @@ const Blog = () => {
           <h2 className="text-4xl font-bold mb-4">
             Latest <span className="text-primary">Blog Posts</span>
           </h2>
-          <p className="text-textSecondary max-w-2xl mx-auto">
+          <p className="text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">
             Sharing my thoughts and experiences in web development, design, and technology.
           </p>
         </motion.div>
@@ -117,7 +117,7 @@ const Blog = () => {
                     </a>
                   </h3>
                   
-                  <p className="text-textSecondary mb-4 line-clamp-3">
+                  <p className="text-gray-600 dark:text-gray-300 mb-4 line-clamp-3">
                     {post.excerpt}
                   </p>
                   

@@ -12,17 +12,21 @@ const Hero = () => {
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.5 }}
           >
-            <div className="bg-white rounded-2xl p-4 inline-block mb-4 shadow-md">
-              <span className="flex items-center gap-2">
+            <div className="bg-white dark:bg-gray-900 rounded-2xl p-4 inline-block mb-4 shadow-md">
+              <span className="flex items-center gap-2 text-gray-900 dark:text-white">
                 <span className="text-2xl">👋</span>
-                Hello, I am
+                Hello,
               </span>
             </div>
             
-            <h1 className="text-5xl md:text-6xl font-bold mb-6">
-              Akila
+            <h1 className="text-4xl md:text-6xl font-bold mb-6 text-gray-900 dark:text-white">
+               I'm <span className="text-primary">Akila</span>
             </h1>
             
+            <p className="text-lg md:text-xl text-gray-600 dark:text-gray-300 mb-8 max-w-2xl">
+              A passionate developer focused on creating interactive and user-friendly applications
+            </p>
+
             <div className="flex flex-col gap-4 mb-8">
               <span className="bg-white/80 rounded-full px-4 py-2 inline-block w-fit">
                 Fullstack WEB DEVELOPER
@@ -42,13 +46,13 @@ const Hero = () => {
             </div>
 
             <div className="flex gap-4">
-              <a href="#" className="text-textSecondary hover:text-primary transition-colors">
+              <a href="#" className="text-gray-600 dark:text-gray-300 hover:text-primary transition-colors">
                 <FaTwitter size={20} />
               </a>
-              <a href="#" className="text-textSecondary hover:text-primary transition-colors">
+              <a href="#" className="text-gray-600 dark:text-gray-300 hover:text-primary transition-colors">
                 <FaFacebookF size={20} />
               </a>
-              <a href="#" className="text-textSecondary hover:text-primary transition-colors">
+              <a href="#" className="text-gray-600 dark:text-gray-300 hover:text-primary transition-colors">
                 <FaInstagram size={20} />
               </a>
             </div>
